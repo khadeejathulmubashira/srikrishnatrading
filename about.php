@@ -27,7 +27,7 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
                         <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Srikrishna traders</span></h1>
+                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Krishna trading Company</span></h1>
                         <p class="mb-4">
 – your ultimate destination for premium tiles, sanitary ware, CP fittings, electricals, and plumbing essentials. With years of experience and a passion for excellence, we are committed to transforming your spaces with products that combine style, durability, and performance.
 </p>
@@ -43,8 +43,8 @@ From elegant tiles and smart sanitary ware to sleek chrome fittings, reliable el
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
                                         <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Staffs</p>
+                                        <h2 class="mb-1" data-toggle="counter-up">100</h2>
+                                        <p class="mb-0">Products</p>
                                     </div>
                                 </div>
                             </div>
@@ -52,13 +52,13 @@ From elegant tiles and smart sanitary ware to sleek chrome fittings, reliable el
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
                                         <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                        <h2 class="mb-1" data-toggle="counter-up">1000</h2>
                                         <p class="mb-0">Clients</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a>
+                        <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a> -->
                     </div>
                     <div class="col-lg-6">
                         <div class="row g-3">

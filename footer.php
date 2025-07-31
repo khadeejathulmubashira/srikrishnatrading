@@ -29,7 +29,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="bg-primary rounded p-4 h-100">
                     <a href="index.php">
-                        <h1 class="text-white text-uppercase mb-3">Srikrishna Traders</h1>
+                        <h1 class="text-white text-uppercase mb-3">krishna Trading Company</h1>
                     </a>
                     <p class="text-white mb-0">
                         Explore our <a class="text-dark fw-bold" href="sector.php?name=tiles">Our Collections</a>,
@@ -45,7 +45,7 @@
 
     <!-- Address - clickable with Google Maps -->
     <p class="mb-2">
-        <a href="https://www.google.com/maps?q=Anebagilu,M.G.Road,Kasaragod-671121" target="_blank" class="text-white text-decoration-none">
+        <a href="https://maps.app.goo.gl/JvcivXoy9TUUdu219" target="_blank" class="text-white text-decoration-none">
             <i class="fa fa-map-marker-alt me-3"></i>Anebagilu, M.G.Road, Kasaragod - 671121
         </a>
     </p>
@@ -53,7 +53,7 @@
     <!-- Phone - clickable with tel: -->
     <p class="mb-2">
         <a href="tel:+916282838119" class="text-white text-decoration-none">
-            <i class="fa fa-phone-alt me-3"></i>+91 6282838119
+            <i class="fa fa-phone-alt me-3"></i>+91 7994177302
         </a>
     </p>
 
@@ -73,10 +73,10 @@
 
     <!-- Social Links -->
     <div class="d-flex pt-2">
-        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-twitter"></i></a>
-        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-youtube"></i></a>
-        <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-youtube"></i></a>
+        <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-linkedin-in"></i></a>
     </div>
 </div>
 
@@ -86,11 +86,11 @@
                 <div class="row gy-4">
                     <div class="col-6">
                         <h6 class="section-title text-primary text-uppercase mb-4">Company</h6>
-                        <a class="btn btn-link" href="#">About Us</a>
-                        <a class="btn btn-link" href="#">Contact Us</a>
-                        <a class="btn btn-link" href="#">Privacy Policy</a>
-                        <a class="btn btn-link" href="#">Terms & Condition</a>
-                        <a class="btn btn-link" href="#">Support</a>
+                        <a class="btn btn-link" href="about.php">About Us</a>
+                        <a class="btn btn-link" href="contact.php">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Support</a>
                     </div>
                     <div class="col-6">
   <h6 class="section-title text-primary text-uppercase mb-4">Products</h6>
@@ -115,18 +115,18 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Srikrishna Traders</a>, All Rights Reserved.
+                    &copy; <a class="border-bottom" href="#">krishna Trading Company</a>, All Rights Reserved.
                     <br>
                     
                 </div>
-                <div class="col-md-6 text-center text-md-end">
+                <!-- <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
                         <a href="#">Home</a>
                         <a href="#">Cookies</a>
                         <a href="#">Help</a>
                         <a href="#">FAQs</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -152,7 +152,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <!-- WhatsApp Floating Button -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 (function () {
     var options = {
         whatsapp: "917994012077", // Your number with country code
@@ -164,7 +164,7 @@
     s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
     var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 })();
-</script>
+</script> -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- Tilt.js -->
@@ -195,6 +195,98 @@ document.querySelectorAll(".filter-btns button").forEach(btn => {
         card.style.display = "none";
       }
     });
+  });
+});
+</script>
+
+
+
+<!-- Your page content -->
+
+<!-- Chatbase Chatbot Script -->
+<script>
+(function(){
+  if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+    window.chatbase = (...args) => {
+      if (!window.chatbase.q) {
+        window.chatbase.q = [];
+      }
+      window.chatbase.q.push(args);
+    };
+    window.chatbase = new Proxy(window.chatbase, {
+      get(target, prop) {
+        if (prop === "q") {
+          return target.q;
+        }
+        return (...args) => target(prop, ...args);
+      }
+    });
+  }
+  const onLoad = function() {
+    const script = document.createElement("script");
+    script.src = "https://www.chatbase.co/embed.min.js";
+    script.id = "NP0RGAhZeuMeebEilFRez"; // Your chatbot ID
+    script.domain = "www.chatbase.co";
+    document.body.appendChild(script);
+  };
+  if (document.readyState === "complete") {
+    onLoad();
+  } else {
+    window.addEventListener("load", onLoad);
+  }
+})();
+</script>
+
+
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/917994177302" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp Icon">
+</a>
+
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #000; /* Match your shown color */
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+</style>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const pdfButtons = document.querySelectorAll('.view-pdf-btn');
+  const pdfFrame = document.getElementById('pdfFrame');
+
+  pdfButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const pdfUrl = this.getAttribute('data-pdf');
+      pdfFrame.src = pdfUrl;
+    });
+  });
+
+  // Optional: clear iframe when modal closes
+  document.getElementById('pdfModal').addEventListener('hidden.bs.modal', function () {
+    pdfFrame.src = '';
   });
 });
 </script>

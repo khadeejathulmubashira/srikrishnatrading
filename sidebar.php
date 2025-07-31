@@ -49,43 +49,40 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link text-white <?php echo ($current_page == 'notifications.php') ? 'active bg-gradient-primary' : ''; ?>" href="notifications.php">
+      <a class="nav-link text-white <?php echo ($current_page == 'manage_catalogue.php') ? 'active bg-gradient-primary' : ''; ?>" href="manage_catalogue.php">
         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
           <i class="material-icons opacity-10">notifications</i>
         </div>
-        <span class="nav-link-text ms-1">Notifications</span>
+        <span class="nav-link-text ms-1">Manage catalogue</span>
       </a>
     </li>
 
-    <li class="nav-item mt-3">
-      <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
-    </li>
 
     <li class="nav-item">
-      <a class="nav-link text-white <?php echo ($current_page == 'profile.php') ? 'active bg-gradient-primary' : ''; ?>" href="profile.php">
+      <a class="nav-link text-white <?php echo ($current_page == 'manage_partners.php') ? 'active bg-gradient-primary' : ''; ?>" href="manage_partners.php">
         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
           <i class="material-icons opacity-10">person</i>
         </div>
-        <span class="nav-link-text ms-1">Profile</span>
+        <span class="nav-link-text ms-1">Manage Partners</span>
       </a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link text-white <?php echo ($current_page == 'sign-in.php') ? 'active bg-gradient-primary' : ''; ?>" href="sign-in.php">
+      <a class="nav-link text-white <?php echo ($current_page == 'manage_gallery.php') ? 'active bg-gradient-primary' : ''; ?>" href="manage_gallery.php">
         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
           <i class="material-icons opacity-10">login</i>
         </div>
-        <span class="nav-link-text ms-1">Sign In</span>
+        <span class="nav-link-text ms-1">Manage Videos</span>
       </a>
     </li>
 
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <a class="nav-link text-white <?php echo ($current_page == 'sign-up.php') ? 'active bg-gradient-primary' : ''; ?>" href="sign-up.php">
         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
           <i class="material-icons opacity-10">assignment</i>
         </div>
         <span class="nav-link-text ms-1">Sign Up</span>
       </a>
-    </li>
+    </li> -->
   </ul>
 </div>

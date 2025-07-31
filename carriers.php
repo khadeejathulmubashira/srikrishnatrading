@@ -23,15 +23,15 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
                 <h6 class="section-title text-start text-primary text-uppercase">Join Our Team</h6>
-                <h1 class="mb-4">Careers at <span class="text-primary text-uppercase">Srikrishna Traders</span></h1>
+                <h1 class="mb-4">Careers at <span class="text-primary text-uppercase">Krishna Trading Company</span></h1>
                 <p class="mb-4">
-                    At Srikrishna Traders, we believe in building not only strong spaces but also strong teams. If you're passionate about sales, customer service, logistics, or design, we invite you to be part of our growing journey.
+                    At Krishna Trading Company, we believe in building not only strong spaces but also strong teams. If you're passionate about sales, customer service, logistics, or design, we invite you to be part of our growing journey.
                 </p>
                 <p class="mb-4">
                     We value dedication, integrity, and a willingness to learn. Explore exciting career opportunities with us and help transform homes and commercial spaces with style and functionality.
                 </p>
                 <div class="text-center mb-4">
-                    <img src="img/carrier.jpeg" alt="Team at work" class="img-fluid rounded shadow" style="max-width: 90%; height: auto;">
+                    <img src="img\forcarrier .jpg" alt="Team at work" class="img-fluid rounded shadow" style="max-width: 90%; height: auto;">
                 </div>
             </div>
 

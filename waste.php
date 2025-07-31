@@ -124,3 +124,89 @@ if ($sector_id > 0) {
 
 
 <!-- product.php-->
+
+
+
+<style>
+  .catalogue-bg {
+    background: url('img/caroussel-8.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 80px 0;
+    z-index: 1;
+  }
+
+  .catalogue-bg::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    z-index: -1;
+  }
+
+  .glass-card {
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+  }
+
+  .glass-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .catalogue-logo {
+    max-height: 100px;
+    object-fit: contain;
+  }
+
+  .catalogue-preview {
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+</style>
+
+<!-- Section wrapper with background -->
+<section class="catalogue-bg">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h6 class="section-title text-primary text-uppercase">Our Designs</h6>
+      <h1>Explore Our <span class="text-primary text-uppercase">Designs</span></h1>
+    </div>
+
+    <?php
+    $res = $conn->query("SELECT * FROM catalogues ORDER BY id DESC");
+    if ($res->num_rows > 0):
+        while ($row = $res->fetch_assoc()):
+    ?>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-10">
+        <div class="glass-card p-4 rounded shadow">
+          <div class="row align-items-center">
+            <div class="col-md-3 text-center mb-3 mb-md-0">
+              <img src="<?= htmlspecialchars($row['logo_path']) ?>" alt="<?= htmlspecialchars($row['brand_name']) ?> Logo" class="img-fluid catalogue-logo">
+            </div>
+
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <h4 class="mb-2 text-dark"><?= htmlspecialchars($row['title']) ?></h4>
+              <p class="mb-0 text-dark"><?= nl2br(htmlspecialchars($row['description'])) ?></p>
+              <?php if (!empty($row['pdf_path'])): ?>
+                <a href="view_pdf.php?id=<?= $row['id'] ?>" class="btn btn-outline-primary mt-3" target="_blank">📄 View PDF</a>
+              <?php endif; ?>
+            </div>
+
+            <div class="col-md-3 text-center">
+              <img src="<?= htmlspecialchars($row['image_path']) ?>" alt="<?= htmlspecialchars($row['title']) ?> Preview" class="img-fluid catalogue-preview">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php endwhile; else: ?>
+      <div class="text-center"><p>No catalogues available.</p></div>
+    <?php endif; ?>
+  </div>
+</section>
+
+<!-- catalogue -->

@@ -35,6 +35,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    
+    
 </head>
 
 <body>
@@ -51,8 +55,8 @@
         <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
-    <a href="index.php" class="navbar-brand bg-color w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-        <img src="img\sk_logo-removebg-preview.png" alt="SK Traders Logo" style="max-height: 100px;">
+    <a href="index.php" class="navbar-brand bg-colorr w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+        <img src="img\realsklogo.jpeg" alt="SK Traders Logo" style="max-height: 100px;">
     </a>
 </div>
 
@@ -71,7 +75,7 @@
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
                                 <p class="mb-0">
                     <a href="tel:+919684562413" class="text-dark text-decoration-none">
-                        +91 9684562413
+                        +91 7994177302
                     </a>
                 </p>
                             </div>
@@ -86,15 +90,15 @@
                             </div>
                         </div>
                     </div>
-                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                        <a href="index.php" class="navbar-brand bg-color d-block d-lg-none">
-                        <img src="img\sk_logo-removebg-preview.png" alt="Srikrishna Traders Logo" style="height: 100px;">
+                    <nav class="navbar bg-colorr navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.php" class="navbar-brand bg-colorr d-block d-lg-none">
+                        <img src="img\realsklogo.jpeg" alt="Srikrishna Traders Logo" style="height: 100px;">
                         </a>
 
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse bg-color justify-content-between" id="navbarCollapse">
+                        <div class="collapse navbar-collapse bg-colorr justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
                                 <a href="index.php" class="nav-item nav-link ">Home</a>
                                 <a href="about.php" class="nav-item nav-link">About</a>
@@ -174,29 +178,21 @@
     // Fetch sectors
     $sector_res = $conn->query("SELECT * FROM sectors ORDER BY id ASC");
     while ($sector = $sector_res->fetch_assoc()) {
-        echo '<div class="dropdown-item d-flex align-items-center justify-content-between position-relative">';
-        echo '<div><img src="' . htmlspecialchars($sector['sector_image']) . '" alt="' . htmlspecialchars($sector['sector_name']) . '"> ' . htmlspecialchars($sector['sector_name']) . '</div>';
-
-        // Fetch subsectors
-        $sub_res = $conn->query("SELECT * FROM subsectors WHERE sector_id = " . intval($sector['id']));
-        if ($sub_res->num_rows > 0) {
-            echo '<div class="subsector-menu">';
-            while ($sub = $sub_res->fetch_assoc()) {
-                echo '<a href="products.php?sector_id=' . $sector['id'] . '&subsector=' . urlencode($sub['slug']) . '">' . htmlspecialchars($sub['subsector_name']) . '</a>';
-            }
-            echo '</div>';
-        }
-
-        echo '</div>';
+        echo '<a class="dropdown-item d-flex align-items-center" href="products.php?sector_id=' . $sector['id'] . '">';
+        echo '<img src="' . htmlspecialchars($sector['sector_image']) . '" alt="' . htmlspecialchars($sector['sector_name']) . '" class="me-2" style="width:40px; height:40px; object-fit:cover; border-radius:5px;">';
+        echo htmlspecialchars($sector['sector_name']);
+        echo '</a>';
     }
     ?>
   </div>
 </div>
 
 
+
                             
                                 <a href="carriers.php" class="nav-item nav-link">Carriers</a>
-                                <a href="" class="nav-item nav-link">Achievements & Awards</a>
+                                <a href="video.php" class="nav-item nav-link">Gallery</a>
+                                <!--<a href="" class="nav-item nav-link">Achievements & Awards</a>-->
                                 <!--<div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div class="dropdown-menu rounded-0 m-0">

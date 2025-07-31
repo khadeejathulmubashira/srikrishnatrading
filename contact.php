@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <!-- Google Map -->
             <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                 <iframe class="position-relative rounded w-100 h-100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.1655795451807!2d74.99096147358043!3d12.505181824935521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4825cd5598cd1%3A0x3a5cd76b410af900!2sSri%20Krishna%20Hardwares!5e0!3m2!1sen!2sin!4v1753269369811!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.1647924708373!2d74.99143907358042!3d12.505234024934417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4825cd53865b9%3A0xbcae714e541e25f0!2sKrishna%20Trading%20Company!5e0!3m2!1sen!2sin!4v1753685227535!5m2!1sen!2sin" 
                     frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
                 </iframe>
             </div>
